@@ -1,0 +1,7 @@
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.exe.config
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.exe
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\bin\Debug\MyFirstProject.pdb
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.csproj.AssemblyReference.cache
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.exe
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\MyFirstProject\MyFirstProject\obj\Debug\MyFirstProject.pdb
