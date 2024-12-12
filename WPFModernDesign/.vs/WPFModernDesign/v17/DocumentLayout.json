@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Migliorelli\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|c:\\users\\migliorelli\\documents\\arquivos\\learning-csharp\\wpfmoderndesign\\wpfmoderndesign\\theme\\textboxtheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|solutionrelative:wpfmoderndesign\\theme\\textboxtheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|c:\\users\\migliorelli\\documents\\arquivos\\learning-csharp\\wpfmoderndesign\\wpfmoderndesign\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\wpfmoderndesign\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|solutionrelative:wpfmoderndesign\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\wpfmoderndesign\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|solutionrelative:wpfmoderndesign\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|c:\\users\\migliorelli\\documents\\arquivos\\learning-csharp\\wpfmoderndesign\\wpfmoderndesign\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1F70AAA8-C4F1-423D-9015-DCBBAC95D969}|WPFModernDesign\\WPFModernDesign.csproj|solutionrelative:wpfmoderndesign\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Migliorelli\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,21 +25,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 274,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Window.cs",
               "DocumentMoniker": "C:\\Users\\Migliorelli\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs",
-              "ToolTip": "C:\\Users\\Migliorelli\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs [Read Only]",
+              "ToolTip": "C:\\Users\\Migliorelli\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\db105d885f1f3d323cd9b8b7b7209ba6e588cd6d33824eb686c42073e147baf9\\Window.cs",
               "ViewState": "AgIAAPsRAAAAAAAAAAAiwP0RAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T14:30:36.376Z",
-              "IsPinned": true,
-              "EditorCaption": " [Read Only]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -43,7 +46,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "TextBoxTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\WPFModernDesign\\Theme\\TextBoxTheme.xaml",
+              "RelativeDocumentMoniker": "WPFModernDesign\\Theme\\TextBoxTheme.xaml",
+              "ToolTip": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\WPFModernDesign\\Theme\\TextBoxTheme.xaml",
+              "RelativeToolTip": "WPFModernDesign\\Theme\\TextBoxTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-11T23:53:02.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\WPFModernDesign\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPFModernDesign\\MainWindow.xaml.cs",
@@ -51,20 +66,18 @@
               "RelativeToolTip": "WPFModernDesign\\MainWindow.xaml.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T14:33:01.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T14:33:01.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\WPFModernDesign\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPFModernDesign\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Migliorelli\\Documents\\Arquivos\\learning-csharp\\WPFModernDesign\\WPFModernDesign\\MainWindow.xaml",
               "RelativeToolTip": "WPFModernDesign\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T14:30:19.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T14:30:19.804Z"
             }
           ]
         }
