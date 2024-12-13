@@ -17,3 +17,9 @@ C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\
 C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\App.baml
 C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\bin\Debug\Icons\eye.ico
 C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\FileWatcher_Content.g.cs
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\bin\Debug\System.ValueTuple.dll
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.pdb
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\FileWatc.D3F63814.Up2Date
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\FileWatcher.csproj.SuggestedBindingRedirects.cache
+C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\FileWatcher.exe.config

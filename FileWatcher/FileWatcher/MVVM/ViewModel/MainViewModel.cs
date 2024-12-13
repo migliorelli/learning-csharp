@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Input;
-using System.Drawing;
 using FileWatcher.Core;
+using FileWatcher.Services;
+using Microsoft.Toolkit.Uwp.Notifications;
 
 namespace FileWatcher.MVVM.ViewModel
 {
     internal class MainViewModel : ObservableObject
     {
 
-        private NotifyIcon notifyIcon;
+        private readonly SystemTrayService _systemTray;
+        private readonly FileWatcherService _fileWatcher;
 
         private bool _watching = false;
         public bool Watching
@@ -23,7 +23,15 @@ namespace FileWatcher.MVVM.ViewModel
         public string FilePath
         {
             get { return _filePath; }
-            set { _filePath = value; OnPropertyChanged(); }
+            set
+            {
+                _filePath = value;
+                OnPropertyChanged();
+                if (value != null && value != string.Empty)
+                {
+                    StartWatching();
+                }
+            }
         }
 
         public RelayCommand SelectFileCommand { get; set; }
@@ -33,75 +41,100 @@ namespace FileWatcher.MVVM.ViewModel
 
         public MainViewModel()
         {
-
-            ConfigureTrayIcon();
-
             SelectFileCommand = new RelayCommand(o => SelectFile());
             StopWatchingCommand = new RelayCommand(o => StopWatching());
             MinimizeToTrayCommand = new RelayCommand(o => MinimizeToTray());
+
+            _systemTray = new SystemTrayService();
+            _systemTray.Opening += (sender, args) => UpdateTrayIcon();
+            _systemTray.StartWatching += (sender, args) => SelectFile();
+            _systemTray.StopWatching += (sender, args) => StopWatching();
+
+            _fileWatcher = new FileWatcherService();
+            _fileWatcher.FileChanged += (sender, args) => ShowNotification();
         }
 
-        private void ConfigureTrayIcon()
+        private void UpdateTrayIcon()
         {
+            _systemTray.EditItem(SystemTrayService.MenuItemKey.Watching, GetWatchingText());
+        }
 
-            notifyIcon = new NotifyIcon
+        private void ShowNotification()
+        {
+            string[] names = FilePath.Split('\\');
+            string fileName = names[names.Length - 1];
+
+            new ToastContentBuilder()
+                .AddText($"The file {fileName} changed.");
+        }
+
+        private string GetWatchingText()
+        {
+            // minus 3 for the ellipsis
+            int maxLength = 27 - 3;
+            bool filePathNotNull = _filePath != string.Empty && _filePath != null;
+            string text = "Watching nothing";
+
+            if (filePathNotNull)
             {
-                Visible = false,
-                Text = "File Watcher",
-                ContextMenuStrip = new ContextMenuStrip(),
-                Icon = new Icon("Icons/eye.ico"),
-            };
+                // check length
+                if (_filePath.Length >= maxLength)
+                {
+                    // reset text
+                    text = "";
+                    // add visible text
+                    for (int i = 0; i < maxLength; i++)
+                    {
+                        text += _filePath[i];
+                    }
 
-            notifyIcon.ContextMenuStrip.Items.Add("Watch another file", null, (sender, args) => SelectFile());
-            notifyIcon.ContextMenuStrip.Items.Add("Stop watching", null, (sender, args) => StopWatching());
-            notifyIcon.ContextMenuStrip.Items.Add("Quit", null, (sender, args) => CloseApplication());
+                    // ellipsis
+                    text += "...";
+                }
+                else text = $"Watching: {_filePath}";
 
-            notifyIcon.DoubleClick += (sender, args) => RestoreFromTray();
-        }
+            }
 
-        private void RestoreFromTray()
-        {
-            notifyIcon.Visible = true;
-            System.Windows.Application.Current.MainWindow.Show();
-            System.Windows.Application.Current.MainWindow.WindowState = WindowState.Normal;
-            System.Windows.Application.Current.MainWindow.Activate();
+            return text;
         }
 
         private void SelectFile()
         {
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            OpenFileDialog dialog = new OpenFileDialog
+            {
+                InitialDirectory = @"%USERPROFILE%/Downloads",
+                Filter = "All files (*.*)|*.*",
+                RestoreDirectory = true
+            };
+
             var result = dialog.ShowDialog();
 
-            if (result == DialogResult.OK)
-            {
-                FilePath = dialog.SelectedPath;
-                StartWatching();
-            }
-        }
+            if (result == DialogResult.OK) FilePath = dialog.FileName;
 
-        private void CloseApplication()
-        {
-            notifyIcon.Visible = false;
-            notifyIcon.Dispose();
-            System.Windows.Application.Current.Shutdown();
-        }
 
-        private void MinimizeToTray()
-        {
-            notifyIcon.Visible = true;
-            System.Windows.Application.Current.MainWindow.Hide();
         }
 
         private void StartWatching()
         {
-            Watching = true;
+            if (FilePath != string.Empty)
+            {
+                Watching = true;
+                _fileWatcher.StartWatching(FilePath);
+            }
         }
 
         private void StopWatching()
         {
             Watching = false;
             FilePath = null;
+            _fileWatcher.StopWatching();
         }
+
+        private void MinimizeToTray()
+        {
+            System.Windows.Application.Current.MainWindow.Hide();
+        }
+
 
     }
 }

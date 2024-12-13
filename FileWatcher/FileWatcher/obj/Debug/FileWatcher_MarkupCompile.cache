@@ -1,7 +1,7 @@
 ﻿FileWatcher
 
 
-exe
+winexe
 C#
 .cs
 C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\obj\Debug\
@@ -12,9 +12,9 @@ DEBUG;TRACE
 C:\Users\Migliorelli\Documents\Arquivos\learning-csharp\FileWatcher\FileWatcher\App.xaml
 1219584333
 1-660036970
-8-383262720
-15767508510
+1143809308
+207970248546
 MainWindow.xaml;
 
-False
+True
 
